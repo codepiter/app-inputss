@@ -58,11 +58,22 @@ In order to ensure that the Laravel community is welcoming to all, please review
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
 ## Install
-Yes, Just install cURL, it will successfully install For Ubuntu with php5: sudo apt-get install php5-curl
+Yes, Just install cURL, it will successfully install For Ubuntu with php5: 
 
-For Ubuntu with php7: sudo apt-get install php7.0-curl
+```shell
+$ sudo apt-get install php5-curl
+```
+For Ubuntu with php7: 
 
-For Ubuntu with php7.4: sudo apt-get install php7.4-curl
+```shell
+$ sudo apt-get install php7.0-curl
+```
+
+For Ubuntu with php7.4: 
+
+```shell
+$ sudo apt-get install php7.4-curl
+```
 
 ## License
 Yes, Just install cURL, it will successfully install For Ubuntu with php5: sudo apt-get install php5-curl
