@@ -1,0 +1,9 @@
+/* Copy the CSS below to your project */
+
+.animateMe{
+  opacity: 0;
+}
+ 
+.animateMe .animated{
+    opacity: 1;
+}
