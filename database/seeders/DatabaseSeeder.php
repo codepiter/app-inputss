@@ -13,13 +13,19 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        $this->call(UserTypeSeeder::class);
+        $this->call(UserSeeder::class);
         // \App\Models\User::factory(10)->create();
 
         // Seeders tipos de usuario
+        /*
         \App\Models\UserType::insert([
             ['type' => 'Administrador'],
             ['type' => 'Cliente'],
-        ]);
+        ]);*/
+
+
+
 
         $ad = \App\Models\Ads\Advertising::create(
             [
