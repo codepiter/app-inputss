@@ -324,20 +324,20 @@ class UserProfileController extends Controller
 				$imgUpdate->orientate();
 				$file_logo = "logo".time().'.jpg';
 	
-				$imgUpdate->save(storage_path('/app/public/uploads/'.$file_logo));
+				$imgUpdate->save(storage_path('app/public/uploads/'.$file_logo));
 				$userProfile['logo'] = $file_logo;
 			}
 
-			if(File::exists(storage_path('/app/public/uploads/'.$user_profile->logo))) {
+			if(File::exists(storage_path('app/public/uploads/'.$user_profile->logo))) {
 				if(!strpos($user_profile->logo, '/'))
-					File::delete(storage_path('/app/public/uploads/'.$user_profile->logo));
+					File::delete(storage_path('app/public/uploads/'.$user_profile->logo));
 			} 
 			
         } else {
 			if($request->get('logo-pre') != "") {
-				if(File::exists(storage_path('/app/public/uploads/'.$user_profile->logo))) {
+				if(File::exists(storage_path('app/public/uploads/'.$user_profile->logo))) {
 					if(!strpos($user_profile->logo, '/'))
-						File::delete(storage_path('/app/public/uploads/'.$user_profile->logo));
+						File::delete(storage_path('app/public/uploads/'.$user_profile->logo));
 				}
 
 				$pre=$request->get('logo-pre');
