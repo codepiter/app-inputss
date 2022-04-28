@@ -339,7 +339,7 @@
 							   <li class="">
                                     <a href="{{ route('userprofiles.index') }}" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class="ti-layers"></i><b>IL</b></span>
-                                        <span class="pcoded-mtext"><!--Users-->{{__('messages.users') }}</span>
+                                        <span class="pcoded-mtext"><!--Users-->Mpjoda {{__('messages.users') }}</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
@@ -362,8 +362,8 @@
                                     </ul>
                                 </li>
 
-                                @isset(Auth::user()->userProfile->type_plan)
-                                    @if(Auth::user()->userProfile->type_plan == 'pro')
+                               <!-- @ i s s e t (Auth::user()->userProfile->type_plan)
+                                    @ i f (Auth::user()->userProfile->type_plan == 'pro')-->
                                         <li class="">
                                             <a href="{{ route('stadistics.index') }}" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-stats-up"></i></span>
@@ -371,8 +371,8 @@
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
-                                    @endif
-                                @endisset
+                                   <!-- @ e n d i f
+                                @ e n d i s s e t -->
                                 
 
                                 <li class="">
@@ -407,8 +407,8 @@
                                     </ul>
                                 </li>
 
-                                @isset(Auth::user()->userProfile->type_plan)
-                                    @if(Auth::user()->userProfile->type_plan == 'pro')
+                                <!-- @ i s s e t (Auth::user()->userProfile->type_plan)
+                                    @ i f (Auth::user()->userProfile->type_plan == 'pro') -->
                                         <li class="pcoded-hasmenu">
                                             <a href="#" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-bar-chart"></i><b>IL</b></span>
@@ -439,14 +439,15 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                    @endif
-                                @endisset
+                                    <!--
+                                        @ e n d i f
+                                @ e n d i s s e t -->
 								
                             </ul>
                             <div class="pcoded-navigation-label"></div>
                             <ul class="pcoded-item pcoded-left-item">
-                                @isset(Auth::user()->userProfile->type_plan)	
-	                                @if(Auth::user()->userProfile->type_plan=='pro')
+                               <!-- @ i s s e t (Auth::user()->userProfile->type_plan)	
+	                                @ i f (Auth::user()->userProfile->type_plan=='pro')-->
 								        <li class="">
 										    <a href="{{ route('customers.index') }}" class="disabled waves-effect waves-dark">
 											    <span class="pcoded-micon"><i class="ti-money"></i><b>-></b></span>
@@ -454,11 +455,11 @@
 											    <span class="pcoded-mcaret"></span>
 										    </a>
 									    </li>
-	                                @endif
-                                @endisset
+	                            <!--    @ e n d i f
+                                @ e n d i s s e t -->
 
-                                @isset(Auth::user()->userProfile->type_plan)	
-	                                @if(Auth::user()->userProfile->type_plan=='pro')
+                               <!-- @ i s s e t (Auth::user()->userProfile->type_plan)	
+	                                @ i f (Auth::user()->userProfile->type_plan=='pro')-->
 								        <li class="">
 										    <a href="{{ route('customers.index') }}" class="waves-effect waves-dark">
 											    <span class="pcoded-micon"><i class="ti-lock"></i><b>-></b></span>
@@ -466,11 +467,13 @@
 											    <span class="pcoded-mcaret"></span>
 										    </a>
 									    </li>
-	                                @endif
-                                @endisset
+                                        <!--
+	                                @ endif
+                                @ endisset-->
 
-                                @isset(Auth::user()->userProfile->type_plan)	
-	                                @if(Auth::user()->userProfile->type_plan=='pro')
+                            <!--
+                                @ i s s e t (Auth::user()->userProfile->type_plan)	
+	                                @ i f (Auth::user()->userProfile->type_plan=='pro')-->
 								        <li class="">
 										    <a href="{{ route('premium.index') }}" class="waves-effect waves-dark">
 											    <span class="pcoded-micon"><i class="ti-crown"></i><b>-></b></span>
@@ -478,11 +481,12 @@
 											    <span class="pcoded-mcaret"></span>
 										    </a>
 									    </li>
-	                                @endif
-                                @endisset
-
-                                @isset(Auth::user()->userProfile->type_plan)	
-	                                @if(Auth::user()->userProfile->type_plan=='pro')
+                                        <!--
+	                                @ endif
+                                @ endisset-->
+                                <!--
+                                @ i s s e t (Auth::user()->userProfile->type_plan)	
+	                                @ i f (Auth::user()->userProfile->type_plan=='pro')-->
 								        <li class="">
 										    <a href="{{ route('customers.index') }}" class="disabled waves-effect waves-dark">
 											    <span class="pcoded-micon"><i class="ti-eye"></i><b>-></b></span>
@@ -490,8 +494,9 @@
 											    <span class="pcoded-mcaret"></span>
 										    </a>
 									    </li>
-	                                @endif
-                                @endisset
+                                        <!--
+	                                @ endif
+                                @ endisset-->
                             </ul>
                         </div>
 											
